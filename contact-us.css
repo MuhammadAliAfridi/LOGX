@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    flex-direction: column;
+    border-bottom-right-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+    height: 50vh;
+    background: url(./images/banner-bg.jpg);
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar a:hover{
+    background-color: goldenrod;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+.sign-in {
+    background: #ff5c5c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ourshop{
+    text-align: center;
+    height: 50%;
+}
+.ourshop h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+}
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-info h2 {
+    color: #ff4d67;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+.contact-info .details {
+    margin-top: 20px;
+}
+.contact-info .details p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.map-form {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form input, .form textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.form input.full-width {
+    width: 100%;
+}
+.form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+}
+.form button {
+    padding: 10px 20px;
+    background-color: #ff4d67;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+.form button:hover {
+    background-color: #ff2a47;
+}
+.footer {
+    background: #007bff;
+    color: white;
+    display: flex;    
+    justify-content: center;
+    padding: 20px;
+}
+@media (max-width: 790px) {
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;   
+        
+    }    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }  
+    .navbar a{
+        display: flex;
+        width: 100%;
+        height: 0;
+        margin-bottom: 3rem;
+    }
+    .navbar .sign-in{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+    .navbar a:hover{
+        background-color: transparent;
+        padding: 0;
+    }
+    .header .logo img{
+        position: absolute;
+        left: 40%;
+        top: 7%;
+        width: 50%;
+    }
+}
