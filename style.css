@@ -1,0 +1,294 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: url(./images/banner-bg.jpg);
+    color: white;
+    
+}
+
+.logo {
+    width: 10%;
+    font-weight: bold;
+    /* animation-duration: 3s;
+    animation-delay: 2s; */
+}
+.logo img{
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar a:hover{
+    background-color: goldenrod;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+.sign-in {
+    background: #ff5c5c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    background: url(./images/banner-bg.jpg);
+    color: white;
+    border-bottom-right-radius: 9rem;
+    border-bottom-left-radius: 9rem;
+}
+
+.hero-content h1 span {
+    text-decoration: underline;
+    color: #ff5c5c;
+}
+.hero-image {
+    position: relative;
+
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.discount-tag {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    background: #ff5c5c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 15px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    width: 250px;
+}
+
+.search-bar button {
+    background: #ff5c5c;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.search-bar button:hover{
+    background-color: red;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.feature-item {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item img {
+    width: 80px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.feature-item p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+/* Games Section */
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #38363623;
+    border-radius: 45px;
+    padding: 20px 0;
+}
+
+.game img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.categories .category-list {
+    display: flex;
+    background-color: #38363623;
+    border-radius: 45px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.category {
+    background: #007bff;
+    color: white;
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Offers */
+.offers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.offer-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card button {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 790px) {
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;   
+        
+    }    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        margin-top: 1rem;
+    }  
+    .navbar a{
+        display: flex;
+        width: 100%;
+        height: 0;
+        margin-bottom: 3rem;
+    }
+    .navbar .sign-in{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+    .navbar a:hover{
+        background-color: transparent;
+        padding: 0;
+    }
+    .header .logo img{
+        position: absolute;
+        left: 40%;
+        top: 7%;
+        width: 50%;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .search-bar{
+        margin-bottom: 2rem;
+
+    }
+    .search-bar input {
+        width: 100%;
+    }
+
+    .game-list, .category-list, .offers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 80%;
+    }
+}

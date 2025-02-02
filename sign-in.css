@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./images/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    background: url(./images/banner-bg.jpg);
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar a:hover{
+    background-color: goldenrod;
+    padding: 7px;
+    border-radius: 25px;
+}
+.sign-in {
+    background: #ff5c5c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.wrapper{
+    margin-bottom: 5rem;
+    width: 420px;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    border: 2px solid rgba(0,0,0,.1);
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .A{
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.wrapper .A input{
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+    border: 2px solid grey;
+    color: white;
+    background-color: transparent;
+    padding: 20px 45px 20px 20px;
+    font-size: 16spx;
+}
+input::placeholder{
+    color: white;
+}     
+.A i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.B{
+    font-size: 16px;
+    display: flex;
+    margin: -15px 0 15px;
+    justify-content: space-between;
+}
+.B a{
+    color: white;
+    text-decoration: none;
+}
+.B a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    color: grey;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(255,255,255,.2);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(42, 40, 40);   
+}
+.C{
+    text-align: center;
+    padding: 20px 0 15px;
+    font-size: 14.5px;
+}
+.C a{
+    text-decoration: none;
+    color: white;
+}
+.C a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 790px) {
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;   
+        width: 100vw;
+        
+    }    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        margin-top: 1rem;
+    }  
+    .navbar a{
+        display: flex;
+        width: 100%;
+        height: 0;
+        margin-bottom: 3rem;
+    }
+    .navbar .sign-in{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+    .navbar a:hover{
+        background-color: transparent;
+        padding: 0;
+    }
+    .header .logo img{
+        position: absolute;
+        left: 40%;
+        top: 7%;
+        width: 50%;
+    }
+}
